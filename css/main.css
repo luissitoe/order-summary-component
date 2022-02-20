@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* 
+    colors
+    --------------------------------*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-hover: hsl(245, 83%, 68%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: #fff;
+    /*
+    typography
+    ---------------------------------*/
+    --font-main: 'Red Hat Display', sans-serif;
+    /* font weight */
+    --medium: 500;
+    --bold: 700;
+    --black: 900;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--pale-blue);
+    font-family: var(--font-main);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 28.125rem;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+}
+
+.card__body {
+    padding: 3rem 3rem 2rem;
+    text-align: center;
+}
+
+.card__title {
+    font-size: 1.75rem;
+    font-weight: var(--black);
+    color: var(--dark-blue);
+    padding-bottom: 1.5rem;
+}
+
+.card__description {
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+    padding-bottom: 1.875rem;
+}
+
+.plan {
+    background-color: var(--very-pale-blue);
+    border-radius: 0.625rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.plan__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    text-align: left;
+}
+
+.plan__title {
+    font-size: 1rem;
+    font-weight: var(--black);
+    color: var(--dark-blue);
+    padding-bottom: .2rem;
+}
+
+.plan__price {
+    color: var(--desaturated-blue);
+    font-weight: var(--medium);
+}
+
+.plan__btn {
+    font-size: 0.875rem;
+    font-weight: var(--bold);
+    color: var(--bright-blue);
+    text-decoration: underline;
+    transition: .4s;
+}
+
+.plan__btn:hover {
+    text-decoration: none;
+    color: var(--bright-blue-hover);
+}
+
+
+.buttons {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.btn {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 0.938rem;
+    font-weight: var(--black);
+    transition: .4s;
+}
+
+.btn--payment {
+    background-color: var(--bright-blue);
+    box-shadow: 0px 15px 30px hsl(245, 83%, 85%);
+    color: var(--white);
+    border-radius: .5rem;
+}
+
+.btn--payment:hover {
+    background-color: var(--bright-blue-hover);
+}
+
+.btn--cancel {
+    color: var(--desaturated-blue);
+}
+
+.btn--cancel:hover {
+    color: var(--dark-blue);
+}
+
+.footer {
+    padding: 2rem;
+}
+
+.attribution {
+    font-size: 0.958rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
